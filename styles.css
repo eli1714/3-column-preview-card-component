@@ -1,0 +1,142 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, button {
+  background-color: var(--very-light-gray);
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  text-align: left;
+}
+
+h3 {
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+p {
+  color: var(--transparent-white);
+  line-height: 1.7;
+  padding-bottom: 20px;
+}
+
+/* Buttons */
+
+.btn {
+  background-color: var(--very-light-gray);
+  border: 2px solid var(--very-light-gray);
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+/* Container */
+.container {
+  padding: 20px;
+  text-align: left;
+}
+
+/* Cards */
+.card {
+  padding: 50px;
+}
+
+/* Card Images */
+.card img {
+  margin-bottom: 25px;
+}
+
+/* Card Headings */
+.card h3 {
+  margin-bottom: 20px;
+}
+
+/* card content */
+.card p {
+  margin-bottom: 30px;
+}
+
+/* Sedans Section */
+.bright-orange {
+  background-color: var(--bright-orange);
+  color: var(--very-light-gray);
+  border-radius: 7px 7px 0 0;
+}
+
+.bright-orange .btn {
+  color: var(--bright-orange);
+}
+
+/* Suvs Section */
+.dark-cyan {
+  background-color: var(--dark-cyan);
+  color: var(--very-light-gray);
+}
+
+.dark-cyan .btn {
+  color: var(--dark-cyan);
+}
+
+/* Luxury Section */
+.very-dark-cyan {
+  background-color: var(--very-dark-cyan);
+  color: var(--very-light-gray);
+  border-radius: 0 0 7px 7px;
+}
+
+.very-dark-cyan .btn {
+  color: var(--very-dark-cyan);
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--very-light-gray);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 992px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .bright-orange {
+    border-radius: 7px 0 0 7px;
+  }
+
+  .very-dark-cyan {
+    border-radius: 0 7px 7px 0;
+  }
+
+  .card {
+    padding: 45px;
+  }
+
+  .card p {
+    margin-bottom: 80px;
+  }
+}
